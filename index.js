@@ -3,7 +3,7 @@ const app = express(); //generates a new application that represetns a running e
 // app object is used to set up configuration that will listen for incoming requests that are routed to the express side of the app from the node side, then route those requests onto different route handlers
 
 app.get ('/', (req,res)=> {
-    res.send ({hi: 'there'});
+    res.send ({hi: 'buddy'});
 });
 
 const PORT = process.env.PORT || 5000; // enivronmental variables set in underlying runtime (see if Heroku has declared a port for us to use)
